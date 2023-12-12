@@ -1,4 +1,4 @@
-setInterval(function () {
+function updateCityTimes() {
   let torontoDateElement = document.querySelector("#toronto-date");
   let torontoTimeElement = document.querySelector("#toronto-time");
   torontoDateElement.innerHTML = moment().format("MMMM Do, YYYY");
@@ -12,4 +12,5 @@ setInterval(function () {
   londonTimeElement.innerHTML = moment
     .tz("Europe/London")
     .format("h:mm:ss [<small>]A[</small>]");
-}, 1000);
+}
+setInterval(updateCityTimes, 1000);
