@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select name="cities" id="city">
+      <select id="city">
         <option value="">Please select a city</option>
         <option value="America/Toronto">Toronto🍁</option>
         <option value="Europe/London">London🍵</option>
@@ -19,24 +19,20 @@
         <option value="Australia/Sydney">Sydney🎭</option>
       </select>
       <div id="cities">
-        <div class="city">
+        <div class="city" id="toronto">
           <div>
             <h2>Toronto🍁</h2>
-            <div class="date" id="toronto-date">December 10, 2023</div>
+            <div class="date"></div>
           </div>
-          <div>
-            <div class="time" id="toronto-time">8:04:32 <small>PM</small></div>
-          </div>
+          <div class="time"></div>
         </div>
-        <div class="city">
-          <div>
-            <h2>London🍵</h2>
-            <div class="date" id="london-date">December 10, 2023</div>
-          </div>
-          <div>
-            <div class="time" id="london-time">8:04:32 <small>PM</small></div>
-          </div>
+      </div>
+      <div class="city" id="london">
+        <div>
+          <h2>London🍵</h2>
+          <div class="date"></div>
         </div>
+        <div class="time"></div>
       </div>
     </div>
     <br />
