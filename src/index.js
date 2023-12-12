@@ -1,8 +1,8 @@
 function updateCityTimes() {
   let torontoElement = document.querySelector("#toronto");
   if (torontoElement) {
-    let torontoDateElement = document.querySelector(".date");
-    let torontoTimeElement = document.querySelector(".time");
+    let torontoDateElement = torontoElement.querySelector(".date");
+    let torontoTimeElement = torontoElement.querySelector(".time");
     torontoDateElement.innerHTML = moment().format("MMMM Do, YYYY");
     torontoTimeElement.innerHTML = moment()
       .tz("America/Toronto")
@@ -11,8 +11,8 @@ function updateCityTimes() {
 
   let londonElement = document.querySelector("#london");
   if (londonElement) {
-    let londonDateElement = document.querySelector(".date");
-    let londonTimeElement = document.querySelector(".time");
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
     londonDateElement.innerHTML = moment().format("MMMM Do, YYYY");
     londonTimeElement.innerHTML = moment()
       .tz("Europe/London")
