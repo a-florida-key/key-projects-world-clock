@@ -6,7 +6,7 @@ torontoTimeElement.innerHTML = moment
   .format("h:mm:ss [<small>]A[</small>]");
 
 let londonDateElement = document.querySelector("#london-date");
-let londonTimeElement = document.querySelector("#ondon-time");
+let londonTimeElement = document.querySelector("#london-time");
 londonDateElement.innerHTML = moment().format("MMMM Do, YYYY");
 londonTimeElement.innerHTML = moment
   .tz("Europe/London")
