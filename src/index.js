@@ -1,5 +1,4 @@
-let tokyoElement = document.querySelector("#tokyo");
-let tokyoDateElement = document.querySelector("#tokyo.date");
-let tokyoTimeElement = document.querySelector("#tokyo.time");
-tokyoDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-tokyoTimeElement.innerHTML = moment.tz("Asia/Tokyo").format("h:mm A");
+let torontoDateElement = document.querySelector("#toronto-date");
+let torontoTimeElement = document.querySelector("#toronto-time");
+torontoDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+torontoTimeElement.innerHTML = moment.tz("Asia/Tokyo").format("h:mm A");
