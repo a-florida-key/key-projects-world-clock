@@ -49,7 +49,7 @@ function updateCity(event) {
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
       </div></div>
-      <a href="index.html">Back to homepage</a>`;
+      <a href="/">Back to homepage</a>`;
 }
 
 setInterval(updateCityTimes, 1000);
